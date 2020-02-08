@@ -1,12 +1,15 @@
-let postcss = require('postcss')
+const postcss = require('postcss')
+const isGlobal = /:global\(\s*\S+\s*\)/
 
-module.exports = postcss.plugin('PLUGIN_NAME', (opts = { }) => {
-
-  // Work with options here
-
-  return (root, result) => {
-
-    // Transform CSS AST here
+module.exports = postcss.plugin('postcss-svelte-global-styles', () => {
+  return (root) => {
+    root.walkRules(rule => {
+      let selectors = rule.selector.split(',')
+      let globalSelectors = selectors.map(sel => {
+        return isGlobal.test(sel) ? sel : ':global(' + sel.trim() + ')'
+      }
+      rule.selector = globalSelectors.join(',')
+    })
 
   }
 })
