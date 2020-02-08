@@ -1,4 +1,4 @@
-# PLUGIN_TITLE
+# MAKE SVELTE STYLES GLOBAL AGAIN!
 
 [PostCSS] plugin postcss-svelte-global-styles.
 
