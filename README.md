@@ -2,7 +2,7 @@
 
 [PostCSS] plugin postcss-svelte-global-styles.
 
-[PostCSS]: https://github.com/HeadMad/postcss-svelte-global-styles
+[PostCSS]: https://github.com/postcss/postcss
 
 ```css
 .foo {
