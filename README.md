@@ -5,6 +5,7 @@
 [PostCSS]: https://github.com/postcss/postcss
 
 ```css
+/* Before */
 .foo {
   width: 300px;
 }
@@ -16,6 +17,7 @@
 ```
 
 ```css
+/* After */
 :global(.foo) {
   width: 300px;
 }
