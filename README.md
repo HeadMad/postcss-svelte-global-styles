@@ -1,9 +1,13 @@
 # Make Svelte Styles Global Again!
 
-[PostCSS] plugin postcss-svelte-global-styles.
+[PostCSS](https://github.com/postcss/postcss) plugin postcss-svelte-global-styles.
 
-[PostCSS]: https://github.com/postcss/postcss
+## Install
+```
+npm install --save-dev HeadMad/postcss-svelte-global-styles#1.0
+```
 
+## Exemple
 ```css
 /* Before */
 .foo {
