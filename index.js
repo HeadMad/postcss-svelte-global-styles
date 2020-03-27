@@ -4,11 +4,11 @@ const isGlobal = /:global\(\s*\S+\s*\)/
 module.exports = postcss.plugin('postcss-svelte-global-styles', () => {
   return root => {
     root.walkRules(rule => {
-      let selectors = rule.selector.split(',')
-      let globalSelectors = selectors.map(sel => {
-        // change selector
-        return isGlobal.test(sel) ? sel : ':global(' + sel.trim() + ')'
-      })
+      const globalSelectors = postcss.list
+        .comma(rule.selector)
+        .map(sel => !isGlobal.test(sel)
+          ? ':global(' + sel.trim() + ')'
+          : sel)
       rule.selector = globalSelectors.join(',')
     })
   }

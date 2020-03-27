@@ -1,4 +1,4 @@
-# MAKE SVELTE STYLES GLOBAL AGAIN!
+# Make Svelte Styles Global Again!
 
 [PostCSS] plugin postcss-svelte-global-styles.
 
@@ -6,13 +6,23 @@
 
 ```css
 .foo {
-    /* Input example */
+  width: 300px;
+}
+
+.bar,
+.baz {
+  height: 300px;
 }
 ```
 
 ```css
 :global(.foo) {
-  /* Output example */
+  width: 300px;
+}
+
+:global(.bar),
+:global(.baz) {
+  height: 300px;
 }
 ```
 
