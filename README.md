@@ -4,7 +4,11 @@
 
 ## Install
 ```
-npm install --save-dev HeadMad/postcss-svelte-global-styles#1.0
+npm install --save-dev postcss-svelte-global-styles
+```
+or
+```
+npm i -D HeadMad/postcss-svelte-global-styles
 ```
 
 ## Exemple
@@ -40,10 +44,10 @@ or `postcss` in bundle config.
 
 If you already use PostCSS, add the plugin to plugins list:
 
-```diff
+```javascript
 module.exports = {
   plugins: [
-+   require('postcss-svelte-global-styles'),
+    require('postcss-svelte-global-styles'),
     require('autoprefixer')
   ]
 }
