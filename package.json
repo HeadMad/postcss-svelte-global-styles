@@ -1,6 +1,6 @@
 {
   "name": "postcss-svelte-global-styles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "make svelte styles global again",
   "keywords": [
     "postcss",
