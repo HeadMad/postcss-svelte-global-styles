@@ -12,9 +12,16 @@
   "scripts": {
     "test": "jest && eslint ."
   },
-  "author": "HeadMad kov.ps@yandex.ru",
+  "author": "HeadMad <kov.ps@yandex.ru>",
   "license": "MIT",
-  "repository": "headmad/postcss-svelte-global-styles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeadMad/postcss-svelte-global-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HeadMad/postcss-svelte-global-styles/issues"
+  },
+  "homepage": "https://github.com/HeadMad/postcss-svelte-global-styles#readme",
   "dependencies": {
     "postcss": "^7.0.27"
   },
